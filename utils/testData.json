@@ -1,6 +1,7 @@
 {
   "description": "Updated via Playwright",
   "topics": {
-    "names": ["playwright", "automation", "javascript"]
+    "names": ["playwright", "automation", "javascript", "testing", "api-testing"]
   }
 }
+

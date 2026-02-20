@@ -5,6 +5,7 @@ const testData = require('../../utils/testData.json');
 
 const REPO_NAME = `playwright-test-${Date.now()}`; // Use unique name to avoid 422 errors
 
+//test to perform CRUD operations on GitHub repositories using the API, with validations and schema checks, running in serial to maintain state across tests.
 test.describe.serial('GitHub API CRUD Operations', () => {
   let api;
   console.log(`Using GitHub token for user: ${process.env.GITHUB_USER}`);
