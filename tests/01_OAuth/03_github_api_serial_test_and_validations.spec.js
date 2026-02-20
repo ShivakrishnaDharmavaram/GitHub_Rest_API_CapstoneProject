@@ -5,7 +5,6 @@ const testData = require('../../utils/testData.json');
 
 const REPO_NAME = `playwright-test-${Date.now()}`; // Use unique name to avoid 422 errors
 
-//test to perform CRUD operations on GitHub repositories using the API, with validations and schema checks, running in serial to maintain state across tests.
 test.describe.serial('GitHub API CRUD Operations', () => {
   let api;
   console.log(`Using GitHub token for user: ${process.env.GITHUB_USER}`);
@@ -103,8 +102,3 @@ test.describe.serial('GitHub API CRUD Operations', () => {
 //     await requestContext.dispose();
 //   });
 });
-
-
-// How to run this test:
-// 1. Ensure you have your GitHub token and username set in a .env file or as environment variables.
-// 2. Run the test using the command: npm test or npx playwright test
